@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Database</title>
+</head>
+<body>
+    <h1>Student Database Form</h1>
+    <form id="studentForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+         
+        <label for="Add1">Add1:</label>
+        <input type="text" id="Add1" name="Add1"><br><br>
+    
+        <label for="Add2">Add2:</label>
+        <input type="text" id="Add2" name="Add2"><br><br>
+
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city"><br><br>
+
+        <label for="pin">Pin Code:</label>
+        <input type="text" id="pin" name="pin"><br><br>
+
+        <label for="m1">Marks 1:</label>
+        <input type="number" id="m1" name="m1"><br><br>
+
+        <label for="m2">Marks 2:</label>
+        <input type="number" id="m2" name="m2"><br><br>
+
+        <label for="m3">Marks 3:</label>
+        <input type="number" id="m3" name="m3"><br><br>
+
+        <button type="button" onclick="submitForm()">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+
+    <script>
+        function submitForm() {
+            alert("Form submitted successfully!");
+            document.getElementById('studentForm').reset();
+        }
+    </script>
+</body>
+</html>
